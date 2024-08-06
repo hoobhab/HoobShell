@@ -1,5 +1,5 @@
 .SECONDEXPANSION:
-TARGETS := release debug 
+TARGETS := release debug  
 .PHONY: $(TARGETS) all
 
 export TERM ?= xterm-256color
@@ -9,7 +9,7 @@ all: $(TARGETS)
 compile_commands.json:
 	bear -- $(MAKE) -B all
 
-EXE := bigshell
+EXE := hoobshell
 SRCS := $(shell find src -type f -name '*.c')
 OBJS := $(SRCS:src/%.c=%.o)
 

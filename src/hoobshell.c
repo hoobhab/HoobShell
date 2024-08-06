@@ -1,4 +1,3 @@
-/* XXX DO NOT MODIFY THIS FILE XXX */
 #define _POSIX_C_SOURCE 200809
 #include <err.h>
 #include <errno.h>
@@ -17,7 +16,7 @@
 #include "util/gprintf.h"
 #include "wait.h"
 
-/** Main bigshell loop
+/** Main hoobshell loop
  */
 int
 main(int argc, char *argv[])
@@ -53,7 +52,7 @@ prompt:
       errno = 0;
       goto prompt;
     } else if (res == 0) { /* No commands parsed */
-      if (feof(stdin)) bigshell_exit(); /* Exit on eof */
+      if (feof(stdin)) hoobshell_exit(); /* Exit on eof */
       goto prompt; /* Blank line */
     } else {
       gprintf("Parsed command list to execute:");
@@ -79,5 +78,5 @@ err:
   free(cl);
   params.status = 127;
   warn(0);
-  bigshell_exit();
+  hoobshell_exit();
 }

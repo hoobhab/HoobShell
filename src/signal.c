@@ -88,7 +88,7 @@ signal_ignore(int sig)
   
 }
 
-/** Restores signal dispositions to what they were when bigshell was invoked
+/** Restores signal dispositions to what they were when hoobshell was invoked
  *
  * @returns 0 on success, -1 on failure
  *

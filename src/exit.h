@@ -1,4 +1,4 @@
 #pragma once
 
-/** exits bigshell (cleanly) */
-extern void bigshell_exit(void);
+/** exits hoobshell (cleanly) */
+extern void hoobshell_exit(void);

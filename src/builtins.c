@@ -125,7 +125,7 @@ builtin_exit(struct command *cmd, struct builtin_redir const *redir_list)
     params.status = exitValue;
   }
   gprintf("Last fg status: %d", params.status);
-  bigshell_exit();
+  hoobshell_exit();
   return -1;
 }
 
